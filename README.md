@@ -1,6 +1,6 @@
-# pyglFlow
-An openGL GLSL implementation of Stuff TBD Using a python front end
+# pyglFaceBlur
 
+OpenGL, Mediapipe, opevcv video/webcam face writing
 ## Installation
 
 Tested running on win10 with python 3.8 x64
@@ -10,6 +10,9 @@ $ pip install git+https://github.com/philipNoonan/pyglFaceBlur.git
 ```
 
 ## Using pyglFaceBlur
+
+If using a system with only one webcam, select cam : 0 from the dropdown list.
+If using videos, you need to create a data directory
 
 ```
 mkdir data
