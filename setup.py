@@ -10,6 +10,7 @@ requirements = [
     'PyOpenGL',
     'opencv-python',
     'imgui',
+    'mediapipe'
 ]
 
 setup(
@@ -18,17 +19,17 @@ setup(
     python_requires='>=3.6',
     entry_points={
         'console_scripts': [
-            'pyglflow=pyglflow.pyglFlow:main',
+            'pyglfaceblur=pyglfaceblur.pyglFaceblur:main',
         ],
     },
     install_requires=requirements,
     include_package_data=True,
-    name='pyglflow',
-    packages=find_packages(include=['pyglflow', 'pyglflow.*']),
+    name='pyglfaceblur',
+    packages=find_packages(include=['pyglfaceblur', 'pyglfaceblur.*']),
     setup_requires=[],
     test_suite='tests',
     tests_require=[],
-    url='https://github.com/philipNoonan/pyglFlow',
+    url='https://github.com/philipNoonan/pyglFaceBlur',
     version='0.1.0',
     zip_safe=False,
 )
