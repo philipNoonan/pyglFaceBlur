@@ -9,6 +9,7 @@ requirements = [
     'glfw',
     'PyOpenGL',
     'opencv-python',
+    'openvr',
     'imgui',
     'mediapipe'
 ]
@@ -19,7 +20,7 @@ setup(
     python_requires='>=3.6',
     entry_points={
         'console_scripts': [
-            'pyglfaceblur=pyglfaceblur.pyglFaceblur:main',
+            'pyglfaceblur=pyglfaceblur.face_blur:main',
         ],
     },
     install_requires=requirements,
