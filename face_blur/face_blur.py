@@ -226,8 +226,11 @@ def main():
                     reset()
                     if filemode == 1:
                         cap, width, height = openCamera(cameraList[currentCamera])
+                        #print("width, height", width, height)
+
                     elif filemode == 2:
                         cap, width, height = openVideo(fileList[currentFile])
+                        #print("width, height", width, height)
                         numberOfFrames = cap.get(cv2.CAP_PROP_FRAME_COUNT)
 
 
@@ -235,7 +238,7 @@ def main():
                     #densifiactionFBO = DIS.generateDensificationFramebuffer(textureList[5], width, height)
 
                     fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-                    writer = cv2.VideoWriter('.//output.wmv', fourcc, 20.0, (width,  height), True)
+                    writer = cv2.VideoWriter('.//output.wmv', fourcc, 20.0, (int(width),  int(height)), True)
 
                     resetVideoSource = False
 
