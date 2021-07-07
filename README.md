@@ -21,7 +21,7 @@ mkdir data
 Place any video you want to play with into the /data folder.
 
 ```
-$ pyglFaceBlur
+$ pyglfaceblur
 ```
 
 This opens a black window, with a menu allowing you to choose between Use Camera, and Select Video File. Either option prompts a new drop down list of camera IDs (click to choose 0 for default) or available video files found in the /data directory.
