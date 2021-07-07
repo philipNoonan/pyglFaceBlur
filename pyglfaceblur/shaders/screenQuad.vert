@@ -1,6 +1,7 @@
-#version 430
-    in layout(location = 0) vec3 position;
-    in layout(location = 1) vec2 inTexCoords;
+#version 150
+    in vec3 position;
+    in vec2 inTexCoords;
+    
     out vec3 newColor;
     out vec2 outTexCoords;
     void main()

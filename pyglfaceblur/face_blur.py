@@ -93,8 +93,8 @@ def main():
     if not glfw.init():
         return
     #glfw.window_hint(glfw.VISIBLE, False)    
-    glfw.window_hint(glfw.CONTEXT_VERSION_MAJOR, 4)
-    glfw.window_hint(glfw.CONTEXT_VERSION_MINOR, 3)
+    glfw.window_hint(glfw.CONTEXT_VERSION_MAJOR, 3)
+    glfw.window_hint(glfw.CONTEXT_VERSION_MINOR, 2)
     #creating the window
     window = glfw.create_window(1600, 900, "face blurring", None, None)
     if not window:
